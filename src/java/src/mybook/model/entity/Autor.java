@@ -18,8 +18,8 @@ public class Autor extends Pessoa{
         this.livros = livros;
     }
 
-    public Autor(List<Livro> livros, String nome, String rg, String cpfCnpj, Endereco endereco, Usuario ususario) {
-        super(nome, rg, cpfCnpj, endereco, ususario);
+    public Autor(List<Livro> livros, String nome, String rg, String cpfCnpj, Usuario ususario) {
+        super(nome, rg, cpfCnpj,  ususario);
         this.livros = livros;
     }
 

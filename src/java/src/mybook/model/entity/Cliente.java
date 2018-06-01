@@ -26,8 +26,8 @@ public class Cliente extends Pessoa{
         
     }
 
-    public Cliente(String nome, String rg, String cpfCnpj, Endereco endereco, Usuario ususario) {
-        super(nome, rg, cpfCnpj, endereco, ususario);
+    public Cliente(String nome, String rg, String cpfCnpj, Usuario ususario) {
+        super(nome, rg, cpfCnpj, ususario);
     }
     
     

@@ -13,18 +13,16 @@ public abstract class Pessoa {
     private String nome;
     private String rg;
     private String cpfCnpj;
-    private Endereco endereco;
     private Usuario ususario;
 
     public Pessoa() {
     
     }
 
-    public Pessoa(String nome, String rg, String cpfCnpj, Endereco endereco, Usuario ususario) {
+    public Pessoa(String nome, String rg, String cpfCnpj,  Usuario ususario) {
         this.nome = nome;
         this.rg = rg;
         this.cpfCnpj = cpfCnpj;
-        this.endereco = endereco;
         this.ususario = ususario;
     }
 
@@ -50,14 +48,6 @@ public abstract class Pessoa {
 
     public void setCpfCnpj(String cpfCnpj) {
         this.cpfCnpj = cpfCnpj;
-    }
-
-    public Endereco getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
     }
 
     public Usuario getUsusario() {
