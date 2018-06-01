@@ -22,15 +22,15 @@ public abstract class DaoUtil {
     
     
     public Connection getConnection() throws SQLException, ClassNotFoundException{
-//        if(connect == null){
-//            String password = "system";
-//            String user = "123456";
-//            String url = "jdbc:oracle:thin:@localhost:1521:XE";
-//            /*Driver do banco de dados.*/
-//            Class.forName("oracle.jdbc.OracleDriver");
-//            
-//           connect = DriverManager.getConnection(url,user, password);
-//        }
+        if(connect == null){
+            String password = "system";
+            String user = "123456";
+            String url = "jdbc:oracle:thin:@localhost:1521:XE";
+            /*Driver do banco de dados.*/
+            Class.forName("oracle.jdbc.OracleDriver");
+            
+           connect = DriverManager.getConnection(url,user, password);
+        }
         
         return connect;
     }
